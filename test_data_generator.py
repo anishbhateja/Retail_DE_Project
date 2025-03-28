@@ -2,6 +2,7 @@ import boto3
 import json
 import random
 import string
+import os
 
 
 def list_s3_objects(bucket_name, prefix):
@@ -17,6 +18,8 @@ def list_s3_objects(bucket_name, prefix):
             obj_list.append(obj['Key'])
 
     return obj_list
+
+    
 
 def read_json_from_s3(bucket_name, key):
     """
@@ -40,7 +43,7 @@ def put_json_to_kinesis(data, stream_name):
 
 def main():
     # Replace these values with your own
-    bucket_name = 'sparkwithdeepak-training-bucket-new'
+    bucket_name = 'anish-retail-db'
     prefix = 'test-data'
     stream_name = 'test-kinesis_stream999'
 
@@ -52,9 +55,12 @@ def main():
     for s3_object in s3_objects:
         json_data = read_json_from_s3(bucket_name, s3_object)
         print("Data read from S3 object:", json_data)
+        print("Data Read Compl1")
         for txn in json_data:
             put_json_to_kinesis(txn, stream_name)
 
 
 if __name__ == "__main__":
+    os.environ["AWS_PROFILE"] = "dev_user_anish"
+    os.environ["AWS_REGION"] = "us-west-1"  # Set your preferred AWS region
     main()
