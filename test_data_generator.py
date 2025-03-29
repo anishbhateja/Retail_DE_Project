@@ -19,7 +19,7 @@ def list_s3_objects(bucket_name, prefix):
 
     return obj_list
 
-    
+
 
 def read_json_from_s3(bucket_name, key):
     """
@@ -35,7 +35,7 @@ def put_json_to_kinesis(data, stream_name):
     """
     Put JSON data to a Kinesis stream.
     """
-    kinesis = boto3.client('kinesis')
+    kinesis = boto3.client('kinesis', region_name= "ap-south-1")  # Explicitly specify region
     data = json.dumps(data)
     response = kinesis.put_record(StreamName=stream_name, Data=data, PartitionKey=generate_random_string(10))
     print("Data put to Kinesis stream:", response)
@@ -45,7 +45,7 @@ def main():
     # Replace these values with your own
     bucket_name = 'anish-retail-db'
     prefix = 'test-data'
-    stream_name = 'test-kinesis_stream999'
+    stream_name = 'kinesis_retail_stream'
 
     # Step 1: List all S3 objects in the prefix
     s3_objects = list_s3_objects(bucket_name, prefix)
@@ -55,12 +55,12 @@ def main():
     for s3_object in s3_objects:
         json_data = read_json_from_s3(bucket_name, s3_object)
         print("Data read from S3 object:", json_data)
-        print("Data Read Compl1")
+        print("Data Read Complete")
         for txn in json_data:
             put_json_to_kinesis(txn, stream_name)
 
 
 if __name__ == "__main__":
     os.environ["AWS_PROFILE"] = "dev_user_anish"
-    os.environ["AWS_REGION"] = "us-west-1"  # Set your preferred AWS region
+    os.environ["AWS_REGION"] = "us-west-1" 
     main()

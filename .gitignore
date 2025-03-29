@@ -24,7 +24,9 @@ wheels/
 venv/
 ENV/
 env/
-.env
+.env/
+.venv/
+myvenv/
 
 # IDE
 .idea/
@@ -40,4 +42,4 @@ credentials
 *.log
 
 # Local development
-.DS_Store 
+.DS_Store

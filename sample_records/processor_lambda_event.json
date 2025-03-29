@@ -1,0 +1,36 @@
+{
+  "Records": [
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "mZSFCVUpkb",
+        "sequenceNumber": "49661845757842052929184467587716926256905313978475872258",
+        "data": "eyJSZXRhaWxUeG5EYXRhIjogeyJJbnZvaWNlTm8iOiA4Mjk2LCAiSW52b2ljZURhdGVUaW1lIjogIjIwMjAtMTEtMTggMDU6MjQ6NTkiLCAiU3RvcmVObyI6IDY0LCAiU3RvcmVQb3MiOiAiOERGRzQ1OTg3NTYyIiwgIlN0b3JlQ291bnRyeSI6ICJVbml0ZWQgU3RhdGVzIiwgIkxpbmVJdGVtIjogeyJTdG9ja0NvZGUiOiAiNDgwMDE0IiwgIkRlc2NyaXB0aW9uIjogIlNjYXJmIiwgIlF1YW50aXR5IjogNzEsICJVbml0UHJpY2UiOiA5Ny4xLCAiU2FsZVByaWNlIjogOTIuNDR9LCAiQ3VzdG9tZXIiOiB7IkN1c3RvbWVySUQiOiA4MDg2LCAiRW1haWxJZCI6ICJjZHVyYW50ZTFAYmxvZ2xpbmVzLmNvbSIsICJDb250YWN0Tm8iOiAiKzEtNjUwLTM2My02OTYzIiwgIkZpcnN0TmFtZSI6ICJDaGxvZSIsICJNaWRkbGVOYW1lIjogIkNhc3NhbmRyYSIsICJMYXN0TmFtZSI6ICJEdXJhbnRlIiwgIkFkZHJlc3MiOiAiODAgSmVuaWZlciBEcml2ZSIsICJTdGF0ZSI6ICJNYWluZSIsICJDb3VudHJ5IjogIlBvbGFuZCIsICJaaXBDb2RlIjogMzAzMDN9LCAiRGlzY291bnQiOiB7IkRpc2NvdW50Q29kZSI6ICJTUFJJTkdTQUxFIn0sICJSZWdpb24iOiAiQW50YXJjdGljYSIsICJTb3VyY2VUaW1lc3RhbXAiOiAiMjAyMC0wNC0xNiAwOTozODowNiJ9fQ==",
+        "approximateArrivalTimestamp": 1743184137.043
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000000:49661845757842052929184467587716926256905313978475872258",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::292632051377:role/service-role/kinesis-lambda-processor-role-lfo8uziz",
+      "awsRegion": "ap-south-1",
+      "eventSourceARN": "arn:aws:kinesis:ap-south-1:292632051377:stream/kinesis_retail_stream"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "by2A8cb8fD",
+        "sequenceNumber": "49661845757842052929184467587772536844607586920512356354",
+        "data": "eyJSZXRhaWxUeG5EYXRhIjogeyJJbnZvaWNlTm8iOiA2MDQxLCAiSW52b2ljZURhdGVUaW1lIjogIjIwMjAtMDYtMTEgMDA6MjU6NTciLCAiU3RvcmVObyI6IDY2LCAiU3RvcmVQb3MiOiAiOUpLTDg3NTkxNDUzIiwgIlN0b3JlQ291bnRyeSI6ICJKYXBhbiIsICJMaW5lSXRlbSI6IHsiU3RvY2tDb2RlIjogIjI1ODc1NiIsICJEZXNjcmlwdGlvbiI6ICJDb25kaXRpb25lciIsICJRdWFudGl0eSI6IDM5LCAiVW5pdFByaWNlIjogODcuMCwgIlNhbGVQcmljZSI6IDkyLjg2fSwgIkN1c3RvbWVyIjogeyJDdXN0b21lcklEIjogNjk1NiwgIkVtYWlsSWQiOiAicGNsYXVzZW50aHVlMkBnb29nbGUuY29tIiwgIkNvbnRhY3RObyI6ICIrODEtMTEwLTY5Ni02NDkwIiwgIkZpcnN0TmFtZSI6ICJLYXNwZXIiLCAiTWlkZGxlTmFtZSI6ICJQYWRyaWFjIiwgIkxhc3ROYW1lIjogIkNsYXVzZW4tVGh1ZSIsICJBZGRyZXNzIjogIjYyNCBEYXJ3aW4gUGFzcyIsICJTdGF0ZSI6ICJMb3Vpc2lhbmEiLCAiQ291bnRyeSI6ICJBemVyYmFpamFuIiwgIlppcENvZGUiOiA4MDIwMn0sICJEaXNjb3VudCI6IHsiRGlzY291bnRDb2RlIjogIlNVTU1FUjEwIn0sICJSZWdpb24iOiAiTm9ydGggQW1lcmljYSIsICJTb3VyY2VUaW1lc3RhbXAiOiAiMjAyMS0xMS0xMSAxMDoyMDoxMCJ9fQ==",
+        "approximateArrivalTimestamp": 1743184137.267
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000000:49661845757842052929184467587772536844607586920512356354",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::292632051377:role/service-role/kinesis-lambda-processor-role-lfo8uziz",
+      "awsRegion": "ap-south-1",
+      "eventSourceARN": "arn:aws:kinesis:ap-south-1:292632051377:stream/kinesis_retail_stream"
+    }
+  ]
+}
